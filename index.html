@@ -7,10 +7,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Sofia&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+    
     <style>
         .follow {
             color: blue;
-            background-color: #ecf0f1;;
+            background-color: #ecf0f1;
+        
             font-size: 20px;
             text-align: center;
         }
@@ -24,27 +29,50 @@
         #nav_bar,
         a {
             font-size: 20px;
-            font-weight: bold;
+            font-weight: bolder;
             text-transform: uppercase;
             text-align: center;
             text-decoration: none;
-            font-family: 'Open Sans', sans-serif;
             font-family: 'Sofia', cursive;
-            background-color: #ecf0f1;
-            color:#2ecc71
+            background-color: #2ecc71;
+            color: #eff7f2;
+
         }
 
-        .header_section {
+        .header_section,
+        i {
             text-align: right;
-            background-color:#ecf0f1;
-            color: #1abc9c;
+            /* background-color:#ecf0f1; */
+            color:#d35400;
             font-size: larger;
+            margin: 10px;
+            border: 10px;
+            /* padding: 10px; */
         }
-        iframe{
+
+        iframe {
             border: none;
         }
-       
-      
+
+        .name {
+            font-family: 'Playball', cursive;
+        }
+
+
+        #nav_bar a {
+            margin-right: 30px;
+        }
+        .follow i{
+            margin: 20px;
+            color: blue;
+        }
+        #follow{
+            color: #ecf0f1;
+            background: #2ecc71;
+            font-family: 'Sofia', cursive;
+
+        }
+  
     </style>
 
 
@@ -53,38 +81,32 @@
 <body>
 
     <header>
-        <div class="header_section"><i class="fa fa-user" aria-hidden="true"></i></i>&nbsp;&nbsp;Sonali
-            Karande&nbsp;&nbsp;&nbsp;<i class="fa fa-mobile"
-                aria-hidden="true">&nbsp;&nbsp;&nbsp;</i>9823563279&nbsp;&nbsp;&nbsp;<i class="fa fa-envelope-o"
-                aria-hidden="true"></i>&nbsp;&nbsp;Snlmilke7@gmail.com</div>
-    </header><br>
+        <div class="header_section"><i class="fa fa-user" aria-hidden="true"></i></i><span class="name">Sonali
+                Karande</span><i class="fa fa-mobile" aria-hidden="true"></i><span class="name">9823563279</span><i
+                class="fa fa-envelope-o" aria-hidden="true"></i><span class="name">Snlmilke7@gmail.com</span></div>
+    </header>
+    <hr>
     <nav id="nav_bar">
         <a href="home.html" target="my_frame">HOME</a>
-        &nbsp;&nbsp; &nbsp; &nbsp;
         <a href="techStack.html" target="my_frame">TECH STACK</a>
-        &nbsp;&nbsp; &nbsp; &nbsp;
         <a href="education.html" target="my_frame">EDUCATION</a>
-        &nbsp;&nbsp; &nbsp; &nbsp;
         <a href="projectDetails.html" target="my_frame">PROJECT</a>
-        &nbsp;&nbsp; &nbsp; &nbsp;
         <a href="personalDetails.html" target="my_frame">PERSONAL</a>
-        &nbsp;&nbsp; &nbsp; &nbsp;
         <a href="hobbies.html" target="my_frame">HOBBIES</a>
-        &nbsp;&nbsp; &nbsp; &nbsp;
         <a href="other.html" target="my_frame">OTHER</a>
-        &nbsp;&nbsp; &nbsp; &nbsp;
         <br>
-    </nav>
+    </nav><hr>
     <br>
     <iframe name="my_frame" src="info.html" width="100%" height="500px"></iframe>
     <footer>
-        <div class="follow"><b>Follow me&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.linkedin.com/" target="_blank" class="follow">
-                    <i class="fa fa-linkedin" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;<a
-                    href="https://www.google.com/" target="_blank"  class="follow">
-                    <i class="fa fa-google-plus-official" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;<a
-                    href="https://www.instragram.com/" target="_blank"  class="follow">
-                    <i class="fa fa-instagram" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;<a
-                    href="https://www.facebook.com/" target="_blank"  class="follow">
+        <div class="follow"><span id="follow"><b>Follow me</b></span><a href="https://www.linkedin.com/"
+                    target="_blank" class="follow">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i></a><a
+                    href="https://www.google.com/" target="_blank" class="follow">
+                    <i class="fa fa-google-plus-official" aria-hidden="true"></i></a><a
+                    href="https://www.instragram.com/" target="_blank" class="follow">
+                    <i class="fa fa-instagram" aria-hidden="true"></i></a><a
+                    href="https://www.facebook.com/" target="_blank" class="follow">
                     <i class="fa fa-facebook" aria-hidden="true"></i></a></b></div>
     </footer>
 </body>
