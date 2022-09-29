@@ -5,10 +5,10 @@
 
     <title>CSS Basic</title>
     <style>
-        * {
+        /* * {
             color: brown;
             background-color: aqua;
-        }
+        } */
 
         h4,
         p {
@@ -44,6 +44,7 @@
             padding-bottom: 40px; */
             /* padding: 30px 60px 40px 50px; */
             margin-bottom: 80px;
+            box-shadow: 4px 3px 4px black;
         }
         .box2{
             border: 5px solid rgb(32, 33, 33);
@@ -54,23 +55,55 @@
             margin-top: 150px;
         }
 
+.show:hover{
+    background-color: aqua;
+}
+li{
+    display: inline-block;
+    border: 2px solid red;
+    margin-right: 20px;
+    width: 150px;
+height: 30px;
+}
+.read{
+    visibility: hidden;
+    /* display: none; */
+}
 
     </style>
 </head>
 
 <body>
+
+    <h3>My Hobbies </h3>
+    <ol class="hobbies">
+        <li class="read">Reading Books</li>
+        <li>Listening To Music </li>
+        <li>Cooking</li>
+        <li>Gardening</li><br><br><br>
+        <a href="home.html" target="my_frame">HOME</a>
+        <a href="home.html" target="my_frame">HOME</a>
+        <a href="home.html" target="my_frame">HOME</a>
+        <br><br><br>
     <div class="box1">
         hello how are you
     </div>
     <div class="box2">
 Good morning
     </div>
+        <h2> Main Heading</h2>
+<div class="show">
+    Hello Sonali
+</div>
     <h3>My Name is <span class="my">Sonali Karande</span></h3>
     <p>I im Engineering Graduates</p>
     <h3 class="my">Currently Working in TCS</h3>
     <h4 id="address"> Address: PUNE</h4>
     <h3 class="personal">My father is farmer</h3>
+    <marquee direction="left" width="500px" height="300px" behavior="sliding">
+
     <h3 class="personal">i am married</h3>
+
     <div>Lorem ipsum, dolor sit amet consectetur adipisicing
         elit. Temporibus delectus corrupti sunt impedit atque veritatis mollitia velit nostrum expedita reiciendis,
         quibusdam id alias quos, ut, labore inventore minus blanditiis. Consectetur?</div>

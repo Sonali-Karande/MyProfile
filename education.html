@@ -39,17 +39,37 @@ border-bottom-style: dotted; */
         table{
             margin-right: 80px;
         }
+    td:hover{
+        background: cadetblue;
+        color: aliceblue;
+    }
+    tr:hover{
+        background: cadetblue;
+        color: aliceblue;
+    }
+    /* tr:nth-child(even){
+        background: cadetblue;
+        color: aliceblue;  
+    } */
+    tr:nth-child(odd):hover{
+            background: cadetblue;
+            color: aliceblue;
+        }
+
     </style>
 
 
 </head>
 
 <body>
-    <h3>
-        <caption><b>Educational Qualification</b></caption>
-    </h3><br>
+    <marquee width="100%" direction="left" height="100px">
+        <h3>
+            <caption><b>Educational Qualification</b></caption>
+        </h3>
+       </marquee>
+<br>
 
-    <table>
+    <table class="education_table">
 
 
         <thead>
@@ -69,7 +89,7 @@ border-bottom-style: dotted; */
                 <td>M.SC(COMP)</td>
                 <td>BHARATI VIDYAPEETH DEEMED UNIVERSITY</td>
                 <td>May-2013</td>
-                <td>YashwantraoMohite College
+                <td>Yashwantrao Mohite College
                     ,Pune-38
                 </td>
                 <td>70.10%</td>
@@ -78,7 +98,7 @@ border-bottom-style: dotted; */
                 <td>B.SC(COMP)</td>
                 <td>BHARATI VIDYAPEETH DEEMED UNIVERSITY</td>
                 <td>May-2011</td>
-                <td>YashwantraoMohite College
+                <td>Yashwantrao Mohite College
                     ,Pune-38
                 </td>
                 <td>74.83%</td>
@@ -86,14 +106,14 @@ border-bottom-style: dotted; */
             <tr>
                 <td>HSC</td>
                 <td>MAHARASHTRA</td>
-                <td>March 2008</td>
+                <td>March-2008</td>
                 <td>N.M.V.Junior College,Pune-02</td>
                 <td>55.33% </td>
             </tr>
             <tr>
                 <td>SSC</td>
                 <td>MAHARASHTRA</td>
-                <td>March 2006</td>
+                <td>March-2006</td>
                 <td>Jijamata Girls Highschool,pune-02</td>
                 <td>73.86% </td>
             </tr>

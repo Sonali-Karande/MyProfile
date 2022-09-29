@@ -5,10 +5,10 @@
 
     <title>Home</title>
     <style>
-        .job {
+        .job,h4,h5 {
             color: #ecf0f1;
             background-color: #114b92;
-            font-size: 25px;
+            font-size: 20px;
             font-family: cursive;
         }
 
@@ -35,15 +35,32 @@
         }
         .list_roles li{
             padding: 10px;
-            /* margin: 10px; */
+            
+
         }
+            /* margin: 10px; */
+            .list_roles li::selection{
+            background: cadetblue;
+        }
+        .list_roles li::selection{
+            background-color: #e90a0a;
+        }
+
+        
     </style>
 </head>
 
 <body>
-    <h3 class="job"> Career Objectives </h3>
+    <marquee width="100%" direction="top" height="100%">
+        <h4 class="job"> Career Objectives </h4>
+        </marquee>
+   
     <p> TO WORK IN ORGANIZATION WHERE I CAN LEARN AND GROW MY SKILLS AND HELP ORGANIZATIONAL GROWTH</p>
-    <h3 class="job"> Professional Summary </h3>
+    <marquee  direction="top" >
+         <h4 class="job"> Professional Summary </h4> 
+        </marquee>
+   
+   
     <ul class="list_roles">
         <li> Having 1 years of experience in developing Single page Web Applications using <span class="tech">Angular
                 8</span>, HTML5, CSS3,

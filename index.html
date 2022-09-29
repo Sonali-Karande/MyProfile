@@ -10,12 +10,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
-    
+
     <style>
         .follow {
             color: blue;
             background-color: #ecf0f1;
-        
+
             font-size: 20px;
             text-align: center;
         }
@@ -39,16 +39,16 @@
 
         }
 
-        .header_section,
+        /* .header_section,
         i {
             text-align: right;
             /* background-color:#ecf0f1; */
-            color:#d35400;
+            /* color: #d35400;
             font-size: larger;
-            margin: 10px;
+            margin: 1px;
             border: 10px;
-            /* padding: 10px; */
-        }
+            padding: 10px;
+        } */ */
 
         iframe {
             border: none;
@@ -61,18 +61,38 @@
 
         #nav_bar a {
             margin-right: 30px;
+            text-shadow: 4px 4px 5px rgb(243, 9, 9);
+
         }
-        .follow i{
+
+        #nav_bar a:hover {
+            text-shadow: 5px 5px 5px #4A00E0;
+        }
+
+       /* ol i {
             margin: 20px;
             color: blue;
-        }
-        #follow{
             color: #ecf0f1;
             background: #2ecc71;
             font-family: 'Sofia', cursive;
 
+        } */
+
+       
+        ol li {
+            display: inline-block;
+            /* border: 1px solid aqua; */
+            margin-right: 20px;
+            font-size: larger;
+            width: 180px;
+            height: 30px;
+           background-color:#c1d9df;
+           color: #d35400;
+           text-align: left;
+           font-family: 'Sofia', cursive;
         }
-  
+ 
+      
     </style>
 
 
@@ -81,11 +101,16 @@
 <body>
 
     <header>
-        <div class="header_section"><i class="fa fa-user" aria-hidden="true"></i></i><span class="name">Sonali
+        <ol>
+            <li><i class="fa fa-user" aria-hidden="true"></i></i><span class="name">Sonali Karande</span></li>
+            <li><i class="fa fa-mobile" aria-hidden="true"></i><span class="name">9823563279</span></li>
+            <li><i class="fa fa-envelope-o" aria-hidden="true"></i><span class="name">Snlmilke7@gmail.com</span></li>
+        </ol>
+        <!-- <div class="header_section"><i class="fa fa-user" aria-hidden="true"></i></i><span class="name">Sonali
                 Karande</span><i class="fa fa-mobile" aria-hidden="true"></i><span class="name">9823563279</span><i
-                class="fa fa-envelope-o" aria-hidden="true"></i><span class="name">Snlmilke7@gmail.com</span></div>
+                class="fa fa-envelope-o" aria-hidden="true"></i><span class="name">Snlmilke7@gmail.com</span></div> -->
     </header>
-    <hr>
+
     <nav id="nav_bar">
         <a href="home.html" target="my_frame">HOME</a>
         <a href="techStack.html" target="my_frame">TECH STACK</a>
@@ -95,19 +120,27 @@
         <a href="hobbies.html" target="my_frame">HOBBIES</a>
         <a href="other.html" target="my_frame">OTHER</a>
         <br>
-    </nav><hr>
-    <br>
-    <iframe name="my_frame" src="info.html" width="100%" height="500px"></iframe>
+    </nav>
+    <hr>
+
+    <iframe name="my_frame" src="info.html" width="100%" height="450px"></iframe>
     <footer>
-        <div class="follow"><span id="follow"><b>Follow me</b></span><a href="https://www.linkedin.com/"
-                    target="_blank" class="follow">
-                    <i class="fa fa-linkedin" aria-hidden="true"></i></a><a
-                    href="https://www.google.com/" target="_blank" class="follow">
-                    <i class="fa fa-google-plus-official" aria-hidden="true"></i></a><a
-                    href="https://www.instragram.com/" target="_blank" class="follow">
-                    <i class="fa fa-instagram" aria-hidden="true"></i></a><a
-                    href="https://www.facebook.com/" target="_blank" class="follow">
-                    <i class="fa fa-facebook" aria-hidden="true"></i></a></b></div>
+        <ol class="follow">
+            <li><span><b>Follow me</b></span></li>
+            <li><span><b><a href="https://www.linkedin.com/" target="_blank" class="follow"><i class="fa fa-linkedin" aria-hidden="true"></i></a></b></span></li>
+            <li><span><b><a href="https://www.google.com/" target="_blank" class="follow"><i class="fa fa-google-plus-official" aria-hidden="true"></i></a></b></span></li>
+            <li><span><b><a href="https://www.instragram.com/" target="_blank" class="follow"><i class="fa fa-instagram" aria-hidden="true"></i></a></b></span></li>
+            <li><span><b><a href="https://www.facebook.com/" target="_blank" class="follow"><i class="fa fa-facebook" aria-hidden="true"></i></a></b></span></li>
+        </ol>
+        <!-- <div class="follow"><span id="follow"><b>Follow me</b></span><a href="https://www.linkedin.com/" target="_blank"
+                class="follow">
+                <i class="fa fa-linkedin" aria-hidden="true"></i></a><a href="https://www.google.com/" target="_blank"
+                class="follow">
+                <i class="fa fa-google-plus-official" aria-hidden="true"></i></a><a href="https://www.instragram.com/"
+                target="_blank" class="follow">
+                <i class="fa fa-instagram" aria-hidden="true"></i></a><a href="https://www.facebook.com/"
+                target="_blank" class="follow">
+                <i class="fa fa-facebook" aria-hidden="true"></i></a></b></div> -->
     </footer>
 </body>
 
